@@ -1,0 +1,14 @@
+
+gnuplot
+
+set terminal png enhanced; set output "models.png";
+set xlabel 'Residue number'; set ylabel 'Residue DOPE score';
+plot "./model6.profile" u 1:42 with lines, "./model9.profile" u 1:42 with lines, "./model15.profile" u 1:42 with lines, "./model16.profile" u 1:42 with lines
+reset
+
+
+set terminal png enhanced; set output "models2.png";
+set xlabel 'Residue number'; set ylabel 'Residue DOPE score';
+plot "./model12.profile" u 1:42 with lines, "./model14.profile" u 1:42 with lines, "./model22.profile" u 1:42 with lines, "./model23.profile" u 1:42 with lines
+reset
+
